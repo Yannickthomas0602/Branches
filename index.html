@@ -1,1 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini page sans JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">HT</div>
+      <div>
+        <h1>Mini programme — sans JavaScript</h1>
+        <p class="lead">Exemples d'interactions uniquement avec HTML & CSS (composants natifs).</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Accordéon (HTML natif)</h2>
+        <p>Exemple simple d'éléments pliables sans JS, très utile pour FAQ ou sections d'aide.</p>
+
+        <details open>
+          <summary>
+            <span class="s-left">
+              <span class="dot">A</span>
+              <strong>Introduction</strong>
+            </span>
+            <span class="muted">Cliquer</span>
+          </summary>
+          <p>Bienvenue ! Ceci est un bloc pliable créé avec la balise <code>&lt;details&gt;</code>. Aucun script nécessaire — le navigateur gère l'ouverture/fermeture.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span class="s-left">
+              <span class="dot">B</span>
+              <strong>Astuce</strong>
+            </span>
+            <span class="muted">Accessible</span>
+          </summary>
+          <p>Les éléments <code>&lt;details&gt;</code> sont accessibles au clavier et reconnus par la plupart des lecteurs d'écran.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span class="s-left">
+              <span class="dot">C</span>
+              <strong>Exemple : Formulaire (sans JS)</strong>
+            </span>
+            <span class="muted">Envoyer</span>
+          </summary>
+          <p>
+            <form action="mailto:example@example.com" method="post" enctype="text/plain">
+              <label>
+                Nom<br />
+                <input name="name" placeholder="Ton nom" />
+              </label>
+              <div class="spacer"></div>
+              <label>
+                Message<br />
+                <textarea name="message" rows="4" placeholder="Ton message..."></textarea>
+              </label>
+              <div class="spacer"></div>
+              <button type="submit">Envoyer (mailto)</button>
+            </form>
+            <small>Le bouton utilise <code>mailto:</code> — l'email s'ouvrira dans le client mail de l'utilisateur.</small>
+          </p>
+        </details>
+
+      </section>
+
+      <aside class="side">
+        <div class="card">
+          <h2>Raccourcis</h2>
+          <p class="muted">Voici quelques petites notes :</p>
+          <p><span class="kbd">CTRL</span> + <span class="kbd">F</span> — chercher sur la page<br>
+             <span class="kbd">TAB</span> — naviguer (accessible)</p>
+        </div>
+
+        <div class="card">
+          <h2>À propos</h2>
+          <p class="muted">Page d'exemple compacte. Tu veux d'autres composants CSS-only (onglets, modal, menu mobile, etc.) ? Dis-le-moi et je t’en ferai un autre fichier.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Fait avec ❤️ — 100% HTML & CSS
+    </footer>
+  </div>
+</body>
+</html>
